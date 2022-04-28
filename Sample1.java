@@ -4,17 +4,19 @@ public class Sample1 {
 
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
-		int sum=scan.nextInt();
-		if(sum==2) {
-			System.out.println(sum+"月は28日です");
-		}else if(sum==2 || sum==4 || sum==6 && sum==9 || sum==11) {
-			System.out.println(sum+"月は30日です");
-		}else if(sum==1 || sum==3 || sum==5 || sum==7 || sum==8 || sum==10 || sum==12) {
-			System.out.println(sum+"月は31日です");
-		}else {
-			System.out.println("エラーです");
-		}
+		System.out.println("１回目の数字を入力してください");
+		int sum1=scan.nextInt();
+		System.out.println("２回目の数字を入力してください");
+		int sum2=scan.nextInt();
+		System.out.println("３回目の数字を入力してください");
+		int sum3=scan.nextInt();
+		System.out.println("４回目の数字を入力してください");
+		int sum4=scan.nextInt();
+		System.out.println("５回目の数字を入力してください");
+		int sum5=scan.nextInt();
 		scan.close();
+		System.out.println("５つの数字を合わせた結果を表示します");
+		System.out.println("１回目+"+"２回目+"+"３回目+"+"４回目+"+"５回目="+(sum1+sum2+sum3+sum4+sum5));
 	}
 }
 	
