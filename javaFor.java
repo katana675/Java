@@ -1,19 +1,27 @@
+import java.util.ArrayList;
 
 public class javaFor {
 
 	public static void main(String[] args) {
-		int keisan[] =new int[1000];
+//		int keisan[] =new int[1000];
+		ArrayList keisan=new ArrayList();
 		String awase="exit";
 		int sum=0;
-		System.out.println("数字を入力してください");
-		String kakunin=new java.util.Scanner(System.in).nextLine();
-		if(awase.equals(kakunin)) {
-			for(int i=0; i<keisan.length; i++) {
-				sum+=keisan[i];
-				System.out.println("合計値は"+keisan+"です");
+		int j=0;
+		while(true) {
+			System.out.println("数字を入力してください");
+			String kakunin=new java.util.Scanner(System.in).nextLine();
+			if(awase.equals(kakunin)) {
+				for(int i=0; i<keisan.size(); i++) {
+					sum += Integer.parseInt(keisan.get(i).toString());
 				}
+				System.out.println("合計値は"+sum+"です");
+				break;
 			}else {
-			int keisan=Integer.parseInt(kakunin);	
+//				for(int j=0; j<keisan.length; j++) {
+					keisan.add(Integer.parseInt(kakunin));
+//				}
+			}
 		}
 	}
 }
