@@ -11,8 +11,7 @@ public class calulater {
 
 public class Main{
 	public static void main(String args[]) {
-		addMethod();
-		System.out.println("２つの合計値は"+c+"です");
+		System.out.println("２つの合計値は"+addMethod()+"です");
 		
 		}
 	}
