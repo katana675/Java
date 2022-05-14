@@ -3,7 +3,10 @@ package bank;
 public class calculator {
 	int price;
 	public static void main(String[] args) {
-		int setbalance=0;
+	}
+	public static void setbalance() {
+		int balance;
+		int sum=Main.main(balance);
 	}
 	public static int deposit(int price) {
 		int nothing=0;
