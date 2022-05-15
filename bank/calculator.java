@@ -1,21 +1,20 @@
 package bank;
 
 public class calculator {
-	int price;
+	static  int price;
 	public static void main(String[] args) {
 	}
-	public static void setbalance() {
-		int balance;
-		int sum=Main.main(balance);
+	public static int setbalance(int a) {
+		int balance=a;
+		return balance;
 	}
-	public static int deposit(int price) {
+	public static int deposit(int i) {
 		int nothing=0;
 		if(price==nothing) {
 			return -1;
 		}else {
 			return 0;
 		}
-		
 	}
 	public static int payment(int a) {
 		int nothing=0;
@@ -26,9 +25,8 @@ public class calculator {
 		}
 	}
 	public static int getBalance() {
-		System.out.println(balance);
-		//balanceを表示させる		
+		int num=getBalance();
+		System.out.println(num);
+		return num;
 	}
-	
-	
 }
