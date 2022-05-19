@@ -10,30 +10,28 @@ public class direction {
 	//currentLocation=現在地	
 	//north=北	
 	public static int north(int a) {
-		NP++;
-		return NP;
+		NS=NS+a;
+		return NS;
 	}
 	//east=東
 	public static int east(int a) {
-		EP++;
-		return EP;
+		WE=WE-a;
+		return WE;
 	}
 	//south=南	
 	public static int south(int a){
-		SP++;
-		return SP;
+		NS=NS-a;
+		return NS;
 	}
 	//west=西	
 	public static int west(int a) {
-		WP++;
-		return WP;
+		WE=WE+a;
+		return WE;
 	}
 	public static int WE() {
-		WE=EP-EP;
 		return WE;
 	}
 	public static int NS() {
-		NS=NP-NP;
 		return NS;
 	}
 }
