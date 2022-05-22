@@ -19,19 +19,26 @@ public class Main {
 		while(order!=9) {
 			order=new java.util.Scanner(System.in).nextInt();
 			if(order==0) {
-				System.out.println("現在の場所は"+direction.NS()+","+direction.WE());
+				System.out.println("現在の場所は"+direction.NS()+","+direction.WE()+"です");
 			}else if(order==1) {
 				direction.north(1);
+				System.out.println("1番の北を入力しました");
 			}else if(order==2) {
 				direction.west(1);
+				System.out.println("2番の東を入力しました");
 			}else if(order==3) {
 				direction.south(1);
+				System.out.println("3番の南を入力しました");
 			}else if(order==4) {
 				direction.east(1);
+				System.out.println("4番の西を入力しました");
+			}else if(order==9){
+				System.out.println("9番を確認しました");
+				System.out.println("プログラムを終了します");
 			}else {
 				System.out.println("適切な数字を入力してください");
 				System.out.println("1.北 2.東 3.南 4.西　0.表示 9.終了");
-			}
-		} 	System.out.println("プログラムを終了します");
+			} 
+		}
 	}
 }
